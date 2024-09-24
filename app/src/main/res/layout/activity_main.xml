@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:hint="Masukkan Tahun Lahir Anda"
+        android:hint="@string/edTglLahir"
         android:padding="16dp" />
 
     <Button
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:padding="16dp"
-        android:text="Tekan ini" />
+        android:text="@string/calculate" />
 
     <TextView
         android:id="@+id/tv_hasil"
