@@ -22,7 +22,15 @@ class MainActivity : AppCompatActivity() {
         btnKlik.setOnClickListener {
             val input = edTglLahir.text.toString().toInt()
             val hasil = when (input.toInt()) {
-
+                in 1924..1945 -> "Baby Boomers"
+                in 1946..1964 -> "X"
+                in 1965..1980 -> "Millenials"
+                in 1981..1996 -> "Z"
+                in 1997..2012 -> "Alpha"
+                in 2013..2024 -> "Beta"
+                else -> "Tidak Ditemukan"
+            }
+            tvHasil.text = "Kamu Generasi $hasil"
             }
         }
     }
